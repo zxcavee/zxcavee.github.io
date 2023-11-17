@@ -1,0 +1,906 @@
+body {
+    overflow-x: hidden;
+}
+.zagolov {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 3vw;
+    right: 10%;
+    letter-spacing: 10px;
+    text-shadow: 3px 4px 10px #163985;
+}
+.bgheader {
+    position: absolute;
+    top: 100px;
+    opacity: 3;
+    transition: 1.5s;
+    margin: 0px;
+    left: 0px;
+}
+div.bgheader {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /* центрируем основной контейнер */
+  left: 0;
+}
+img {
+  max-width: 100%; /* ширина картинки */
+  height: auto; /* высота картинки */
+  display: block;
+  margin: auto;
+}
+@media screen and (min-width: 601px) {
+  div.zagolov {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.podzagolov {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.podzagolov {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.menu {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  #ul {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  div.menu {
+      font-size: 1.1vw;
+      right: 23%;
+  }    
+}
+ul {
+    list-style: none;
+    display: flex;
+    color: black;
+    font-family: Helvetica;
+    text-decoration: none;
+    text-shadow: 3px 4px 15px white;
+  }
+  li {
+    margin: 0 40px;
+  }
+  .menu {
+    position: fixed;
+    top: 20px;
+    right: 33%;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    z-index: 1000;
+    padding-left: 23%;
+  }
+  .und {
+	color: #00bfff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.und:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.und:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.und2 {
+	color: #00bfff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.und2:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.und2:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.und3 {
+	color: #00bfff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.und3:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.und3:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.und5 {
+	color: #00bfff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.und5:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.und5:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+.btn1 {
+    position: absolute;
+    top: 750px;
+    right: 51%;
+    text-transform: uppercase;
+    display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 0.7vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation; 
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+    z-index: 2000;
+    min-width: 150px;
+}
+button {
+  display: flex;
+}
+.btn1:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+.btn1:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn1:active {
+    background-color: #808080;
+}
+.btn1:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+}
+.btn2 {
+    position: absolute;
+    top: 750px;
+    left: 53%;
+    text-transform: uppercase;
+    display: inline-block; 
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 0.7vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation; 
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+    z-index: 2000;
+    min-width: 150px;
+}
+.btn2:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+.btn2:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn2:active {
+    background-color: #808080;
+}
+.btn2:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+}
+.podzagolov {
+    position: absolute;
+    top: 63%;
+    text-align: center;
+    font-size: 1.2vw;
+    right: 20%;
+    letter-spacing: 10px;
+    text-shadow: 3px 4px 10px #163985;
+    opacity: 0.7;
+}
+.lorem1 {
+    position: absolute;
+    top: 1460px;
+    text-align: center;
+    font-size: 1.4vw;
+    right: 3%;
+    letter-spacing: 10px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 3px 4px 15px #f9ad63;
+  }
+  div.lorem1 {
+    font-size: 1.2vw; /* Размер шрифта */
+    color: #5a5a5a; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 601px) {
+    div.lorem1 {
+      font-size: 1.2vw;
+    }
+  }
+  /*  CSS код для линии над заголовком */
+  div.lorem1:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+    transition: 0.5s; /* Время, за которое линия возвращается после наведения */
+  }
+  div.lorem1:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+  transition: ease-out 0.7s; /* Время, за которое линия расширяется при наведении */
+  }
+  /*  CSS код для линии под заголовком */
+  div.lorem1:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+    transition: 1s; /* Время, за которое линия возвращается после наведения */
+  }
+  .lorem2 {
+    position: absolute;
+    top: 1640px;
+    text-align: center;
+    font-size: 1.2vw;
+    left: 60%;
+    letter-spacing: 10px;
+    text-align: right;
+    font-weight: bold;
+    max-width: 1920px;
+    margin-right: 3%;
+  }
+  .kvadr {
+    position: absolute;
+    top: 1600px;
+    right: 290px;
+  }
+  div.kvadr {
+    width: 100%;
+    min-width: 950px;
+    left: 57%;
+  }
+ .fon1 {
+    position: absolute;
+    top: 1900px;
+ }
+ /*Задаём ширину КОНТЕЙНЕРУ, центруем, стилизуем*/
+.slider-count {
+    position: relative;
+    top: 60%;
+    width: 100%;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    background: #f5f5f5;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    left: 10%;
+}
+@media screen and (min-width: 601px) {
+  div.slider-wrapper {
+    width: 100%;
+    max-width: 150%;
+    margin: 0 auto; /* центрируем основной контейнер */
+    max-height: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+}
+/*Стилизуем ЗАГОЛОВОК*/
+.slider-count h1 {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1vw;
+    font-weight: normal;
+    text-align: center;
+}
+/*Задаём КОНТЕЙНЕРУ СЛАЙДЕРА отн. 
+позиционирование*/
+.slider {
+    position: relative;
+    left: 10%;
+}
+/*Скрываем сисемные РАДИО-кнопки*/
+.slider input[type=radio] {
+    display: none;
+}
+/*Скрываем переполнение КОНТЕЙНЕРА СЛАЙДОВ*/
+.slider-inner {
+    overflow: hidden;
+    max-width: 150%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*Задаём ширину КОНТЕЙНЕРУ ЛЕНТЫ СЛАЙДОВ равную
+ширине ленты слайдов и задаём плавный переход */
+.slider-slides {
+    width: 290%;
+    transition: transform .8s ease;
+}
+@media screen and (min-width: 601px) {
+  .slider-slides {
+    width: 100%;
+    max-width: 150%;
+    margin: 0 auto; /* центрируем основной контейнер */
+    max-height: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+}
+/*Флотим СЛАЙДЫ в одну ленту и задаём размеры*/
+.slider-slides img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+/*Позиционируем БЛОК УПРАВЛЕНИЯ куда нужно*/
+.slider-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+    z-index: 100;
+    text-align: center;
+
+}
+/*Стилизуем ЛЕЙБЛЫ, делаем плавный переход*/
+.slider-controls label {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    margin: 0 3px;
+    background: #ccc;
+    cursor: pointer;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.8);
+    transition: background-color .2s;
+}
+/*Активное состояние ЛЕЙБЛОВ*/
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"] {
+    background-color: #666;
+}
+/*Связываем 1-й слайд с ЛЕЙБЛОМ 
+и делаем трансормацию*/
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+/*Связываем 2-й слайд с ЛЕЙБЛОМ 
+и делаем трансормацию*/
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-450px);
+}
+/*Связываем 3-й слайд с ЛЕЙБЛОМ 
+и делаем трансормацию*/
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+}
+/*Связываем 4-й слайд с ЛЕЙБЛОМ 
+и делаем трансормацию*/
+#btn-4:checked ~ .slider-inner .slider-slides {
+    transform: translate(-1350px);
+}
+.slider-dot-control {
+  font-size: 1vw;
+  width: 100%;
+
+}
+.lorem3 {
+    position: absolute;
+    top: 2160px;
+    text-align: center;
+    font-size: 1.4vw;
+    left: 41%;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-shadow: 3px 4px 15px #f9ad63;
+    margin-right: 3%;
+    max-width: 1920px;
+  }
+  div.lorem3 {
+    font-size: 1.2vw; /* Размер шрифта */
+    color: #5a5a5a; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /*  CSS код для линии над заголовком */
+  div.lorem3:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+    transition: 0.5s; /* Время, за которое линия возвращается после наведения */
+  }
+  div.lorem3:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+  transition: ease-out 0.7s; /* Время, за которое линия расширяется при наведении */
+  }
+  /*  CSS код для линии под заголовком */
+  div.lorem3:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #f66d52; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+    transition: 1s; /* Время, за которое линия возвращается после наведения */
+  }
+  .bgf {
+    position: absolute;
+    top: 300%;
+    left: 0px;
+  }
+  div.bgf {
+    width: 290%;
+    max-width: 290%;
+    margin: 0 auto; /* центрируем основной контейнер */
+    left: 0;
+    max-height: 100%;
+    height: 100%;
+  }
+  #button-container {
+    position: relative;
+    top: 2100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin-top: 25%;
+  }
+  
+    
+  .button, .text {
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    display: inline-block;
+    padding: 10px 15px; 
+    background-color: #ffffff;
+    color: #5e548e; 
+    border-radius: 25px; 
+    border: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+    
+  .button, .text:hover {
+    background-color: #9984d4; 
+    color: #ffffff; 
+    text-decoration: none; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+  }
+  
+  #first:target {
+      display: block;
+      transform: translateX(70px);
+  }
+    
+  #second:target {
+      display: block;
+      transform: translateY(210px);
+  }
+    
+  #third:target {
+      display: block;
+      transform: translateX(-300px);
+  }
+    
+    
+  #fourth:target {
+      display: block;
+      transform: translateY(-120px);
+  }
+    
+  #reset:target .text {
+      display: none;
+  }
+    
+  #six:target {
+      display: block;
+      transform: translateX(300px);
+  }
+    
+  #first{
+    padding: 31px;
+    z-index: 20;
+  }
+    
+  #reset{
+    margin-top: 100px;
+  }
+  .hl {
+    position: absolute;
+    top: 2300px;
+    left: 100px;
+  }
+  div.hl {
+    width: 100%;
+    max-width: 600px;
+    right: 67%;
+  }
+  #sl_bl{
+    height: 450px;
+    position: relative;
+    left: -5vw;
+    top: 63vw;
+    width: 400px;
+}
+#sl_bl .wrapper{
+    max-width: 40em;
+    margin: 6em auto;
+    position: relative;
+    width: 700px;
+    height: 450px;
+    z-index: -100;
+}
+#sl_bl input{
+    display: none;
+}
+#sl_bl .inner{
+    width: 500%;
+    position: relative;
+    line-height: 0;
+}
+#sl_bl article{
+    width: 700px;
+    float: left;
+    position: relative;
+}
+#sl_bl article img{
+    width: 700px;
+    height: 450px;
+}
+#sl_bl .slider-prev-next-control{
+    height: 50px;
+    position: absolute;
+    top: 50vw;
+    width: 100%;
+    transform: translateY(-50%);
+}
+#sl_bl .slider-prev-next-control label{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    opacity: .7;
+}
+#sl_bl .slider-prev-next-control label:hover{
+    opacity: 1;
+}
+#sl_bl .slider-dot-control{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 3000;
+}
+.slide4 .slider-dot-control label{
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    margin-left: 16px;
+    background: none;
+    border:5px solid rgb(190, 106, 50);
+    transition: all .2s;
+    position: relative;
+    top:78vw;
+    opacity:.8;
+    right: 24%;
+}
+#sl_bl .slider-dot-control label:hover{
+    transform:rotate(1.05);
+}
+#sl_bl .slider-wrapper{
+    width: 100%;
+    position: relative;
+    bottom:80%;
+    left:42%;
+    overflow: hidden;
+    border-radius: 70px;
+    transition: all .5s cubic-bezier()
+}
+#sl_bl .slider-wrapper .inner{
+    transform: translateZ(0);
+    transition: all .8s cubic-bezier(.77, 0, .175, 1)
+}
+#sl_bl #slide1:checked ~ .slider-wrapper .inner{
+    margin-left: 0
+}
+#sl_bl #slide2:checked ~ .slider-wrapper .inner{
+   margin-left: -100%
+}
+#sl_bl #slide3:checked ~ .slider-wrapper .inner{
+   margin-left: -200%
+}
+#sl_bl #slide4:checked ~ .slider-wrapper .inner{
+   margin-left: -300%
+}
+.slide3{
+    position: relative;
+    top: -95px;
+    width: 100%;
+    height: 1080px;
+}
+.slide4{
+    position: relative;
+    top: -95px;
+    width: 100%;
+    height: 1080px;
+    display: inline-block;
+    text-align: center;
+}
+
+#trr1{
+    z-index: 6000;
+}
+.slide4 b{
+position: relative;
+top:1vw;
+color:rgb(255, 255, 255);
+font-size:20px;
+}
+.multibuttons {
+    --shift: 106%;
+    --shift-negative: calc(var(--shift) * -1);
+    --shift-half: calc(var(--shift) / 2);
+    position: relative;
+    width: 50%;
+    height: 119px;
+    margin: 90px 130px;
+    top: 2300px;
+    left: 35%;
+    border-radius: 25px;
+    background: #000000;
+    z-index: 3000;
+    max-width: 600px;
+  }
+  
+  .btn-toggle {
+    z-index: 5;
+    padding: 0;
+  }
+  
+  .btn-toggle::before {
+    content: 'advertisement';
+    color: rgb(226, 109, 32);
+    font-size: 2vw;
+  }
+  
+  .multibuttons>div,
+  .multibuttons>.btn-toggle {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ac6413;
+    border-radius: 5px;
+    background: #000000;
+    cursor: pointer;
+    transition: margin 0.6s ease-in-out;
+  }
+  
+  .multibuttons div:nth-of-type(1) {
+    transform: translateX(var(--shift-negative));
+    margin-left: var(--shift-half);
+    color: #ff0000;
+    font-size: 2vw;
+  }
+  
+  .multibuttons div:nth-of-type(2) {
+    transform: translateY(var(--shift-negative));
+    margin-top: var(--shift-half);
+    color: #ff0000;
+    font-size: 2vw;
+  }
+  
+  .multibuttons div:nth-of-type(3) {
+    transform: translateX(var(--shift));
+    margin-right: var(--shift-half);
+    color: #ff0000;
+    font-size: 2vw;
+  }
+  
+  .multibuttons div:nth-of-type(4) {
+    transform: translateY(var(--shift));
+    margin-bottom: var(--shift-half);
+    color: #ff0000;
+    font-size: 2vw;
+  }
+  
+  #chbx {
+    display: none;
+  }
+  
+  #chbx:checked~div {
+    margin: 0;
+  }
+  
+  #chbx:checked+.btn-toggle::before {
+    content: 'advertisement';
+    color: #060;
+    font-size: 2vw;
+  }
+  #game {
+    margin: 20% 20% 20% 20%;
+  }
+  .lorem5 {
+    position: absolute;
+    top: 303%;
+    font-size: 1.3vw;
+    text-align: left;
+    text-transform: uppercase;
+    left: 1%;
+  }
+  @media screen and (min-width: 601px) {
+    div.lorem5 {
+      font-size: 1.3vw;
+    }
+  }
+  .lorem6 {
+    position: absolute;
+    top: 350%;
+    font-size: 1.2vw;
+    left: 1%;
+  }
+  @media screen and (min-width: 601px) {
+    div.lorem6 {
+      font-size: 1.2vw;
+    }
+  }
+  .lorem7 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    right: 3%;
+    top: 345%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .lorem8 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    right: 3%;
+    top: 303%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .lorem9 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    left: 1%;
+    top: 340%;
+    text-align: right;
+    font-weight: bold;
+  }
